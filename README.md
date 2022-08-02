@@ -3,8 +3,11 @@ A launcher for super mario 64 pc port. works on linux apt/pacman based distros.
 ![screenshot](https://cdn.discordapp.com/attachments/775908791417700363/996196405708329030/Screenshot_from_2022-07-11_18-28-18.png?size=4096)
 
 ## Linux installation
-1.download latest release and unpack it  
-2.Double-click setup and click "run in terminal"
+1. Install git if you have not already using `sudo apt-get install git` on Debian/Ubuntu based systems or `sudo pacman install git` on arch based systems.
+2. Clone the repo using this command: `git clone https://github.com/Bloxxel64/SM64LinuxLauncher`.
+3. Run this command just in case `chmod +x setup.sh; ./setup.sh`.
+4. Run the setup.sh file by double-clicking it or running `./setup.sh`, the SM64LL directory will be in your `home/username` folder.
+5. Open the directory in the terminal or file explorer, if you open it in terminal run `python3 launcher.py`. If you run it from your file explorer, just double-click it.
 
 ## Windows installation
 This repo is focused on Linux. yould be better off using SM64Builder2 or SM64NXBuilder, you can also use the original sm64pclauncher, but it's not recommended.
