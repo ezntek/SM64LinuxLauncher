@@ -58,7 +58,7 @@ while True:
         buildfolder, sep, region = buildselected.partition(':')
         if os.name == 'posix':
             os.system('cd "'+buildfolder+'/build/'+region+'_pc/" && ./sm64.'+region+'.f3dex2e')
-        break
+        
         
     if event == 'Build':
         import builder
