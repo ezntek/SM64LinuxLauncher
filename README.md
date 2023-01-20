@@ -19,8 +19,8 @@ A launcher for the Super Mario 64 PC Port.
 
 ## Supported Distros
 
-* Apt Based Distros (Ubuntu, Debian, Mint, etc.)
-* Pacman Based Distros (EndeavourOS, Arch, Artix, Arco, Manjaro, etc.)
+* `apt` Based Distros (Ubuntu, Debian, Mint, etc.)
+* `pacman` Based Distros (EndeavourOS, Arch, Artix, Arco, Manjaro, etc.)
 
 ## Windows installation
 This repo is focused on Linux. yould be better off using SM64Builder2 or SM64NXBuilder, you can also use the original sm64pclauncher, but it's not recommended.
