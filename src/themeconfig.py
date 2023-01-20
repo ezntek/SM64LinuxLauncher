@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-#Theme configuration
+#!/usr/bin/env python3
+# Theme configuration
 
 '''
 In this file, you can customise the theme/colors of the launcher. There are four themes made by me.
@@ -9,7 +9,7 @@ that are in pysimplegui module (they were not documented on the module's docs si
 to be in two " ' ". If you do something wrong, the launcher will not start.
 '''
 
-#the default theme
+# the default theme
 
 playButtonColor = 'green'
 otherButtonColor = None
@@ -19,7 +19,7 @@ boxColor = None
 boxTextColor = None
 textColor = None
 
-#discord default theme (dark)
+# discord default theme (dark)
 
 '''
 playButtonColor = "#728adb"
@@ -30,7 +30,7 @@ boxColor = '#3e424a'
 boxTextColor = "white"
 textColor = '#73777e'
 '''
-#flashlight (light theme)
+# flashlight (light theme)
 '''
 playButtonColor = 'white'
 otherButtonColor = 'white'
@@ -40,7 +40,7 @@ boxColor = 'white'
 boxTextColor = 'light gray'
 textColor = 'light gray'
 '''
-#oldshool
+# oldshool
 '''
 playButtonColor = '#c4c4c4'
 otherButtonColor = '#c4c4c4'
