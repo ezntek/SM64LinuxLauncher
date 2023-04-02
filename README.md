@@ -11,13 +11,23 @@ A launcher for the Super Mario 64 PC Port.
 2. Clone the repo using this command:
 `git clone https://github.com/Bloxxel64/SM64LinuxLauncher`.
 
-3. Run this command just in case `chmod +x setup.py && ./setup.py`.
+3. Pipe the installer directly into the python interpreter with this command: `/path/to/your/python -c "$(curl -fsSL https://raw.githubusercontent.com/ezntek/SM64LinuxLauncher/master/setup.py)"`
+4. Open the directory in the terminal or file explorer, if you open it in terminal run `python3 launcher.py`. If you run it from your file explorer, just double-click it.
 
-4. Run the setup.sh file by double-clicking it or running `./setup.py`, the SM64LL directory will be in your `home/username` folder.
+## Manual GNU/Linux Installation (no exact comands because you probably smart)
 
-5. Open the directory in the terminal or file explorer, if you open it in terminal run `python3 launcher.py`. If you run it from your file explorer, just double-click it.
+1. Clone the repo
+2. Install the dependencies, which include: 
+  1. pip
+  2. tk
+  3. sdl2 headers
+  4. git
+  5. mips cross-compiler (optional)
+  6. make (gnu make)
+3. Install PySimpleGUI through pip
+4. profit
 
-## Supported Distros
+## Supported Distros (through the installer)
 
 * `apt` Based Distros (Ubuntu, Debian, Mint, etc.)
 * `pacman` Based Distros (EndeavourOS, Arch, Artix, Arco, Manjaro, etc.)
