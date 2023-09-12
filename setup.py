@@ -2,12 +2,12 @@
 import subprocess
 import shutil
 import os
-from pip._internal import main as pip_main
+from pip import main as pip_main
 
 def setup() -> None:
     while True: # start a loop
-        ans: str = input("Use pacman or apt? ")
-        if ans.lower() == "pacman":
+        ans: str = input("Use pacman or apt? ").lower().strip()
+        if ans == "pacman":
             # use su because not all use sudo, some use doas or other utilities
             r = subprocess.run('su -c "pacman -S python3\
                                 python3-pip\
@@ -24,7 +24,7 @@ def setup() -> None:
                 exit()
             break
 
-        elif ans.lower() == "apt":
+        elif ans == "apt":
             r = subprocess.run('su -c "apt-get install python3\
                                                 python3-pip\
                                                 python3-tk\
@@ -39,7 +39,7 @@ def setup() -> None:
         else:
             print("Invalid Answer, try again!")
         # return to top
-    
+
     pip_main(['install', '-U', 'pysimplegui']) # run pip from within python
     shutil.copytree("./src", f"{os.environ['HOME']}/SM64LinuxLauncher") # copy into home folder
 
